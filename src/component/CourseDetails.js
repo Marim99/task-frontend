@@ -3,8 +3,7 @@ import { courses } from "../utilities/courses";
 
 const CourseDetails = () => {
   const params = useParams();
-  console.log(params);
-  return <div>{params.id}</div>;
+  return <div>{courses[params.id - 1].course.title}</div>;
 };
 
 export default CourseDetails;

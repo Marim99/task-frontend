@@ -8,7 +8,7 @@ const AllCourses = () => {
     <div className="all-courses-contanier">
       {courses.map((item) => (
         <Link to={`/courses/${item.id}`}>
-          <Course {...item} key={item.id} />
+          <Course {...item.course} key={item.id} />
         </Link>
       ))}
     </div>
